@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E61149AA1C732E3E0095875E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E61149A91C732E3E0095875E /* main.cpp */; };
+		E68816F51C74153800733C55 /* AppBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F31C74153800733C55 /* AppBase.cpp */; };
+		E68816F81C74167400733C55 /* TimeV1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F61C74167400733C55 /* TimeV1.cpp */; };
+		E68816FA1C7417DA00733C55 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F91C7417DA00733C55 /* network.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		E611499E1C732E0F0095875E /* client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = client; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61149A91C732E3E0095875E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E68816F11C74104D00733C55 /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
+		E68816F31C74153800733C55 /* AppBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppBase.cpp; sourceTree = "<group>"; };
+		E68816F41C74153800733C55 /* AppBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBase.h; sourceTree = "<group>"; };
+		E68816F61C74167400733C55 /* TimeV1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeV1.cpp; sourceTree = "<group>"; };
+		E68816F71C74167400733C55 /* TimeV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeV1.h; sourceTree = "<group>"; };
+		E68816F91C7417DA00733C55 /* network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +50,7 @@
 		E61149951C732E0F0095875E = {
 			isa = PBXGroup;
 			children = (
+				E68816F01C740E7000733C55 /* common */,
 				E61149A81C732E3E0095875E /* src */,
 				E611499F1C732E0F0095875E /* Products */,
 			);
@@ -57,10 +67,32 @@
 		E61149A81C732E3E0095875E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E68816F21C74136A00733C55 /* time */,
 				E61149A91C732E3E0095875E /* main.cpp */,
 			);
 			name = src;
 			path = ../src;
+			sourceTree = "<group>";
+		};
+		E68816F01C740E7000733C55 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E68816F11C74104D00733C55 /* network.h */,
+				E68816F31C74153800733C55 /* AppBase.cpp */,
+				E68816F41C74153800733C55 /* AppBase.h */,
+				E68816F91C7417DA00733C55 /* network.cpp */,
+			);
+			name = common;
+			path = ../../common;
+			sourceTree = "<group>";
+		};
+		E68816F21C74136A00733C55 /* time */ = {
+			isa = PBXGroup;
+			children = (
+				E68816F61C74167400733C55 /* TimeV1.cpp */,
+				E68816F71C74167400733C55 /* TimeV1.h */,
+			);
+			path = time;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68816FA1C7417DA00733C55 /* network.cpp in Sources */,
+				E68816F51C74153800733C55 /* AppBase.cpp in Sources */,
 				E61149AA1C732E3E0095875E /* main.cpp in Sources */,
+				E68816F81C74167400733C55 /* TimeV1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +164,7 @@
 		E61149A31C732E0F0095875E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -163,13 +198,14 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../common";
 			};
 			name = Debug;
 		};
 		E61149A41C732E0F0095875E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -197,6 +233,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../common";
 			};
 			name = Release;
 		};

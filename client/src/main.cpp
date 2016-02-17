@@ -1,7 +1,9 @@
-#include <iostream>
+#include "TimeV1.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+    TimeV1 app;
+    app.mainLoop();
+    
     return 0;
 }
