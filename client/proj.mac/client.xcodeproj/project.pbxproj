@@ -11,6 +11,7 @@
 		E68816F51C74153800733C55 /* AppBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F31C74153800733C55 /* AppBase.cpp */; };
 		E68816F81C74167400733C55 /* TimeV1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F61C74167400733C55 /* TimeV1.cpp */; };
 		E68816FA1C7417DA00733C55 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F91C7417DA00733C55 /* network.cpp */; };
+		E6DCE8551C7C354000677734 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6DCE8531C7C354000677734 /* Test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		E68816F61C74167400733C55 /* TimeV1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeV1.cpp; sourceTree = "<group>"; };
 		E68816F71C74167400733C55 /* TimeV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeV1.h; sourceTree = "<group>"; };
 		E68816F91C7417DA00733C55 /* network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network.cpp; sourceTree = "<group>"; };
+		E6DCE8531C7C354000677734 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
+		E6DCE8541C7C354000677734 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 			children = (
 				E68816F21C74136A00733C55 /* time */,
 				E61149A91C732E3E0095875E /* main.cpp */,
+				E6DCE8531C7C354000677734 /* Test.cpp */,
+				E6DCE8541C7C354000677734 /* Test.h */,
 			);
 			name = src;
 			path = ../src;
@@ -155,6 +160,7 @@
 				E68816F51C74153800733C55 /* AppBase.cpp in Sources */,
 				E61149AA1C732E3E0095875E /* main.cpp in Sources */,
 				E68816F81C74167400733C55 /* TimeV1.cpp in Sources */,
+				E6DCE8551C7C354000677734 /* Test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
