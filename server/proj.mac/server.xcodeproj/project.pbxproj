@@ -11,6 +11,7 @@
 		E68817001C741FA800733C55 /* AppBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816FC1C741FA800733C55 /* AppBase.cpp */; };
 		E68817011C741FA800733C55 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816FE1C741FA800733C55 /* network.cpp */; };
 		E68817051C741FF000733C55 /* TimeV1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68817031C741FF000733C55 /* TimeV1.cpp */; };
+		E6B37F4D1C8197B800AE850E /* EchoV1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B37F4B1C8197B800AE850E /* EchoV1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		E68816FF1C741FA800733C55 /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
 		E68817031C741FF000733C55 /* TimeV1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeV1.cpp; sourceTree = "<group>"; };
 		E68817041C741FF000733C55 /* TimeV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeV1.h; sourceTree = "<group>"; };
+		E6B37F4B1C8197B800AE850E /* EchoV1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EchoV1.cpp; sourceTree = "<group>"; };
+		E6B37F4C1C8197B800AE850E /* EchoV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoV1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		E61149BE1C732E8B0095875E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E6B37F4A1C8197A900AE850E /* echo */,
 				E68817021C741FC900733C55 /* time */,
 				E61149BF1C732E8B0095875E /* main.cpp */,
 			);
@@ -93,6 +97,15 @@
 				E68817041C741FF000733C55 /* TimeV1.h */,
 			);
 			path = time;
+			sourceTree = "<group>";
+		};
+		E6B37F4A1C8197A900AE850E /* echo */ = {
+			isa = PBXGroup;
+			children = (
+				E6B37F4B1C8197B800AE850E /* EchoV1.cpp */,
+				E6B37F4C1C8197B800AE850E /* EchoV1.h */,
+			);
+			path = echo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +168,7 @@
 				E68817051C741FF000733C55 /* TimeV1.cpp in Sources */,
 				E61149C01C732E8B0095875E /* main.cpp in Sources */,
 				E68817011C741FA800733C55 /* network.cpp in Sources */,
+				E6B37F4D1C8197B800AE850E /* EchoV1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

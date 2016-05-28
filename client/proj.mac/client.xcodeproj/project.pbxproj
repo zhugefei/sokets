@@ -11,6 +11,7 @@
 		E68816F51C74153800733C55 /* AppBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F31C74153800733C55 /* AppBase.cpp */; };
 		E68816F81C74167400733C55 /* TimeV1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F61C74167400733C55 /* TimeV1.cpp */; };
 		E68816FA1C7417DA00733C55 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68816F91C7417DA00733C55 /* network.cpp */; };
+		E6B404EA1C82DAB400BD1149 /* EchoV1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B404E81C82DAB400BD1149 /* EchoV1.cpp */; };
 		E6DCE8551C7C354000677734 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6DCE8531C7C354000677734 /* Test.cpp */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		E68816F61C74167400733C55 /* TimeV1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeV1.cpp; sourceTree = "<group>"; };
 		E68816F71C74167400733C55 /* TimeV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeV1.h; sourceTree = "<group>"; };
 		E68816F91C7417DA00733C55 /* network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network.cpp; sourceTree = "<group>"; };
+		E6B404E81C82DAB400BD1149 /* EchoV1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EchoV1.cpp; sourceTree = "<group>"; };
+		E6B404E91C82DAB400BD1149 /* EchoV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoV1.h; sourceTree = "<group>"; };
 		E6DCE8531C7C354000677734 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		E6DCE8541C7C354000677734 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +73,7 @@
 		E61149A81C732E3E0095875E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E6B404E71C82DAA100BD1149 /* echo */,
 				E68816F21C74136A00733C55 /* time */,
 				E61149A91C732E3E0095875E /* main.cpp */,
 				E6DCE8531C7C354000677734 /* Test.cpp */,
@@ -98,6 +102,15 @@
 				E68816F71C74167400733C55 /* TimeV1.h */,
 			);
 			path = time;
+			sourceTree = "<group>";
+		};
+		E6B404E71C82DAA100BD1149 /* echo */ = {
+			isa = PBXGroup;
+			children = (
+				E6B404E81C82DAB400BD1149 /* EchoV1.cpp */,
+				E6B404E91C82DAB400BD1149 /* EchoV1.h */,
+			);
+			path = echo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +174,7 @@
 				E61149AA1C732E3E0095875E /* main.cpp in Sources */,
 				E68816F81C74167400733C55 /* TimeV1.cpp in Sources */,
 				E6DCE8551C7C354000677734 /* Test.cpp in Sources */,
+				E6B404EA1C82DAB400BD1149 /* EchoV1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
